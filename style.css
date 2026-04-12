@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: #121212;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.search {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    flex: 1;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background: #00feba;
+    color: #222;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+.temp {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 10px 0;
+    
+    
+    background: linear-gradient(#fff, #00feba);
+    
+    
+    background-clip: text; 
+    -webkit-background-clip: text;
+    
+    color: transparent; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.city {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: -15px;
+    letter-spacing: 1px;
+}
+
+.description {
+    font-size: 18px;
+    text-transform: capitalize;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.forecast-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 15px;
+    width: 70px;
+    transition: 0.3s;
+}
+
+.forecast-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.day {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #00feba;
+    font-weight: 600;
+}
+
+.f-temp {
+    font-weight: 600;
+    font-size: 16px;
+}
